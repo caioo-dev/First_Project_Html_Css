@@ -1,0 +1,91 @@
+body {
+    background-color: rgb(29, 29, 29);
+}
+
+.container {
+    position: relative;
+    text-align: right;
+    padding-top: 15px; /* Espaçamento do topo */
+    padding-right: 100px;
+    display: flex; /* Ativa flexbox */
+    justify-content: flex-end; /* Alinha os itens no final do container */
+}
+
+.links {
+    margin-left: 10px; /* Espaçamento entre os links */
+    font-size: smaller;
+    text-decoration: none;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    border-bottom: 1px solid transparent;
+}
+
+.links:hover{
+    border-bottom-color: white;
+}
+
+.dropbtn {
+    background-color: transparent;
+    border: none;
+    position: relative; /* Make the button a positioning context for the pseudo-element */
+    cursor: pointer;
+}
+
+.dropbtn::before {
+    content: ''; /* Add content to the ::before pseudo-element */
+    position: absolute; /* Position the pseudo-element absolutely */
+    top: 50%; /* Position the pseudo-element vertically */
+    left: 50%; /* Position the pseudo-element horizontally */
+    transform: translate(-50%, -50%); /* Center the pseudo-element */
+    width: 40px; /* Set the width of the circular background */
+    height: 40px; /* Set the height of the circular background */
+    background-color: transparent; /* Set the background color of the circular background */
+    border-radius: 50%; /* Make the circular background */
+}
+
+.dropbtn:hover::before {
+    background-color: #292929; /* Background color of the circular background on hover */
+}
+
+#dropdownContent{
+    color: white;
+    font-size: smaller;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 30px; /* Adjust the distance from the button */
+    right: -25px; /* Align the box with the button */
+    background-color: #292929;
+    width: auto;
+    padding: 5px;
+    white-space: nowrap; /* Prevent line breaks */
+}
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: inline-block;
+    opacity: 1; /* Show the box */
+    transform: scale(1); /* Scale the box up */
+}
+
+.dropdown {
+    position: absolute; /* Position the dropdown button */
+    top: 20px; /* Adjust vertical position as needed */
+    right: 50px; /* Move the button to the right */
+}
+
+
+#Menu{
+    color: white;
+}
+
+#logoGoogle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 220px;
+}
